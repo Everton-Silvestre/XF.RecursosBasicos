@@ -5,10 +5,7 @@
              x:Class="XF.ControlesBasicos.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Button x:Name="Enviar" Text="Enviar E-mail" Clicked="Enviar_Clicked"></Button>
+        <Button x:Name="Config" Text="Configurações" Clicked="Configuracao_Clicked"></Button>
     </StackLayout>
-
 </ContentPage>

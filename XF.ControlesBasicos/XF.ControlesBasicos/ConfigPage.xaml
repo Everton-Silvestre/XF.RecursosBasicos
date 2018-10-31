@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Context="clr-namespace:XF.ControlesBasicos"
+             x:Class="XF.ControlesBasicos.ConfigPage"
+             Title="Configurações" >
+      
+    
+    <ContentPage.Content>
+        <TableView>
+            <TableView.Root>
+                <TableSection Title="Permissão">
+                    <SwitchCell Text="Permitir envio de e-mail" On="{Binding Permissao, Mode=TwoWay}" ></SwitchCell>
+                    <ViewCell>
+                                <Entry Placeholder="Informe a conta de e-mail" Text="{Binding ContaEmail}" IsVisible="{Binding Permissao}"></Entry>
+                    </ViewCell>
+                </TableSection>                
+            </TableView.Root>
+        </TableView>   
+    </ContentPage.Content>
+</ContentPage>
